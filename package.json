@@ -1,0 +1,27 @@
+{
+  "name": "doman-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for frontend projects configured for React library and using more valuable tools for development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doman89/react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "typescript",
+    "scss",
+    "eslint",
+    "configuration"
+  ],
+  "author": "Mateusz \"doman89\" Domanski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doman89/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/doman89/react-boilerplate#readme"
+}
