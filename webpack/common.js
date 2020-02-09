@@ -14,6 +14,9 @@ module.exports = {
 		chunkFilename: 'js/[name].[contenthash:6].js',
 		filename: '[name].[contenthash:6].js',
 	},
+	resolve: {
+		extensions: ['.js', '.ts', '.tsx'],
+	},
 	module: {
 		rules: [
 			{
