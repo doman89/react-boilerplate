@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"charset": "utf8",
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"jsx": "react",
+		"lib": ["es2018", "dom"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"outDir": "build",
+		"removeComments": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2015",
+		"typeRoots": ["./@types"]
+	},
+	"include": ["src"]
+}
