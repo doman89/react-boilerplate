@@ -4,7 +4,8 @@
   "description": "Boilerplate for frontend projects configured for React library and using more valuable tools for development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/doman89/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/doman89/react-boilerplate#readme"
+  "homepage": "https://github.com/doman89/react-boilerplate#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
 }
