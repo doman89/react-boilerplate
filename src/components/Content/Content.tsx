@@ -10,8 +10,8 @@ const style = bemCssModules(ContentStyles);
 export const Content: React.FC = () => (
 	<section className={style()}>
 		<Switch>
-			<Route path="/about" component={About} />
-			<Route path="/" component={Hello} />
+			<Route component={About} path="/about" />
+			<Route component={Hello} path="/" />
 		</Switch>
 	</section>
 );
