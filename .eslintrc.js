@@ -242,6 +242,7 @@ module.exports = {
 		'@typescript-eslint/explicit-function-return-type': 'off', // overrides
 		'@typescript-eslint/explicit-member-accessibility': 'off', // overrides
 		'@typescript-eslint/explicit-module-boundary-types':'off', // overrides
+		'@typescript-eslint/interface-name-prefix': 'off',
 		'@typescript-eslint/member-delimiter-style': [
 			'warn',
 			{
