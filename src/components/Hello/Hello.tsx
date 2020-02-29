@@ -11,6 +11,7 @@ export const Hello: React.FC = () => (
 			<li className={style('element')}>TypeScript</li>
 			<li className={style('element')}>React</li>
 			<li className={style('element')}>React Router</li>
+			<li className={style('element')}>Stylelint</li>
 		</ul>
 	</article>
 );
