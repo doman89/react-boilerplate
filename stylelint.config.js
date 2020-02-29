@@ -260,7 +260,12 @@ module.exports = {
 				ignoreSelectors: [':export', '/^:import/'],
 			},
 		],
-		'rule-empty-line-before': 'always',
+		'rule-empty-line-before': [
+			'always',
+			{
+				ignore: ['first-nested'],
+			}
+		],
 		'selector-combinator-space-after': 'always',
 		'selector-combinator-space-before': 'always',
 		'selector-pseudo-class-no-unknown': [
