@@ -4,6 +4,7 @@ module.exports = {
 		port: 3000,
 	},
 	module: {
+		devtool: 'inline-source-map',
 		rules: [
 			{
 				test: /\.module\.s(a|c)ss$/,
