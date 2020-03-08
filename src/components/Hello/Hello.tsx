@@ -12,6 +12,7 @@ export const Hello: React.FC = () => (
 			<li className={style('element')}>React</li>
 			<li className={style('element')}>React Router</li>
 			<li className={style('element')}>Stylelint</li>
+			<li className={style('element')}>Eslint</li>
 		</ul>
 	</article>
 );
