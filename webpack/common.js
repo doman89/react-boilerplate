@@ -27,7 +27,29 @@ module.exports = {
 					transpileOnly: true,
 				},
 				exclude: /node_modules/,
-			}
+			},
+			{
+				test: /\.(eot|ttf|woff|woff2)$/,
+				use: {
+					loader: 'file-loader',
+					options: {
+						name: '[name].[hash:8].[ext]',
+						outputPath: 'static/fonts',
+						publicPath: 'static/fonts',
+					},
+				},
+			},
+			{
+				test: /\.(a?png|svg|jpe?g|gif|bmp)$/,
+				use: {
+					loader: 'url-loader',
+					options: {
+						limit: 8192,
+						name: '[name].[hash:8].[ext]',
+						outputPath: 'static/images',
+					},
+				},
+			},
 		],
 	},
 	plugins: [
