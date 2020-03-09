@@ -291,4 +291,8 @@ module.exports = {
 		'string-no-newline': true,
 		'unit-no-unknown': true,
 	},
+	ignoreFiles: [
+        '**/*.ts',
+        '**/*.tsx',
+    ]
 }

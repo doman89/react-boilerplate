@@ -3,8 +3,8 @@ module.exports = {
 		contentBase: './public',
 		port: 3000,
 	},
+	devtool: 'inline-source-map',
 	module: {
-		devtool: 'inline-source-map',
 		rules: [
 			{
 				test: /\.module\.s(a|c)ss$/,
