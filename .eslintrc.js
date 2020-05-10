@@ -331,7 +331,7 @@ module.exports = {
 				'ignoreRestArgs': true 
 			},
 		],
-		'@typescript-eslint/no-extra-non-null-assertion': 'error',
+		'@typescript-eslint/no-extra-non-null-assertion': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-floating-promises': 'warn',
 		'@typescript-eslint/no-for-in-array': 'error',
@@ -382,7 +382,7 @@ module.exports = {
 				allowNumber: true,
 			},
 		],
-		'@typescript-eslint/strict-boolean-expressions': 'warn',
+		'@typescript-eslint/strict-boolean-expressions': 'off',
 		'@typescript-eslint/switch-exhaustiveness-check': 'warn',
 		'@typescript-eslint/triple-slash-reference': [
 			'warn',
