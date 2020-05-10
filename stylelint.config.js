@@ -1,7 +1,12 @@
 module.exports = {
 	plugins: ['@namics/stylelint-bem', 'stylelint-order'],
 	rules: {
-		'at-rule-empty-line-before': 'always',
+		'at-rule-empty-line-before': [
+			'always',
+			{
+				ignore: ['first-nested'],
+			},
+		],
 		'at-rule-name-space-after': 'always',
 		'at-rule-no-unknown': [ 
 			true, 
