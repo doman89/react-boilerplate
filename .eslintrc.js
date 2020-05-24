@@ -333,7 +333,10 @@ module.exports = {
 		],
 		'@typescript-eslint/no-extra-non-null-assertion': 'off',
 		'@typescript-eslint/no-extraneous-class': 'error',
-		'@typescript-eslint/no-floating-promises': 'warn',
+		'@typescript-eslint/no-floating-promises': [
+			'warn',
+			{ignoreVoid: true},
+		],
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-implied-eval': 'error',
 		'@typescript-eslint/no-inferrable-types': 'warn',
@@ -417,7 +420,11 @@ module.exports = {
 		'@typescript-eslint/unified-signatures': 'error',
 		'indent': [
 			'error',
-			'tab'
+			'tab',
+			{
+				SwitchCase: 1,
+				ignoredNodes: ['ConditionalExpression *']
+			},
 		],
 		'linebreak-style': [
 			'error',
