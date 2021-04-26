@@ -1,8 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import { FC } from 'react';
 
-export const About: React.FC = () => (
-	<article>
-		This boilerplate is made by Mateusz "doman89" Domański.
-	</article>
-);
+const welcomeMessage = 'This boilerplate is made by Mateusz "doman89" Domański.';
+
+export const About: FC = () => <article>{welcomeMessage}</article>;
