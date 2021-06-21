@@ -70,7 +70,7 @@ module.exports = {
     'react/no-this-in-sfc': 'error',
     'react/no-unescaped-entities': 'warn',
     'react/no-unknown-property': 'warn',
-    'react/no-unsafe': 'error',
+    'react/no-unsafe': 'off',
     'react/no-unused-prop-types': 'off',
     'react/no-unused-state': 'warn',
     'react/no-will-update-set-state': 'off',
@@ -178,7 +178,7 @@ module.exports = {
     '@typescript-eslint/no-magic-numbers': [
       'warn',
       {
-        ignore: [0, 1],
+        ignore: [-1, 0, 1],
         ignoreArrayIndexes: true,
         ignoreNumericLiteralTypes: true,
         ignoreReadonlyClassProperties: true,
@@ -304,12 +304,9 @@ module.exports = {
         allowSingleExtends: false,
       },
     ],
-    '@typescript-eslint/no-explicit-any': [
-      'error',
-      {
-        ignoreRestArgs: true,
-      },
-    ],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-extra-non-null-assertion': 'off',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': ['warn', { ignoreVoid: true }],
@@ -323,8 +320,8 @@ module.exports = {
     ],
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'error',
-    '@typescript-eslint/no-parameter-properties': 'warn',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
@@ -381,12 +378,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/typedef': 'off',
-    '@typescript-eslint/unbound-method': [
-      'error',
-      {
-        ignoreStatic: true,
-      },
-    ],
+    '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/unified-signatures': 'error',
     indent: [
       'error',
@@ -396,7 +388,7 @@ module.exports = {
         ignoredNodes: ['ConditionalExpression'],
       },
     ],
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-trailing-spaces': 'error',

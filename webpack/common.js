@@ -60,6 +60,7 @@ module.exports = {
     }),
 
     new WebpackHtmlPlugin({
+      inject: 'body',
       template: path(__dirname, '..', 'public', 'index.html'),
     }),
   ],
