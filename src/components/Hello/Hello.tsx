@@ -1,15 +1,14 @@
-import { FC } from 'react';
-import { useSelector } from 'react-redux';
-import { default as bemCssModules } from 'bem-css-modules';
+import { useSelector } from "react-redux";
+import { default as bemCssModules } from "bem-css-modules";
 
-import { RootState } from '../../reducers/rootReducer';
+import { default as HelloStyles } from "./Hello.module.scss";
 
-import { default as HelloStyles } from './Hello.module.scss';
+import type { RootState } from "../../reducers/rootReducer";
 
 const style = bemCssModules(HelloStyles);
 
-export const Hello: FC = () => {
-  const tools = useSelector((state: RootState) => state.example);
+export function Hello() {
+  const tools = useSelector((state: RootState) => state.example.tools);
 
   return (
     <article>
@@ -19,11 +18,11 @@ export const Hello: FC = () => {
       </p>
       <ul>
         {tools.map(tool => (
-          <li className={style('element')} key={tool.name}>
+          <li className={style("element")} key={tool.name}>
             {tool.name}
           </li>
         ))}
       </ul>
     </article>
   );
-};
+}

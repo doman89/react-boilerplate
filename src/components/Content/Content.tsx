@@ -1,19 +1,20 @@
-import { FC } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { default as bemCssModules } from 'bem-css-modules';
+import { Route, Routes } from "react-router-dom";
+import { default as bemCssModules } from "bem-css-modules";
 
-import { About } from '../About/About';
-import { Hello } from '../Hello/Hello';
+import { About } from "../About/About";
+import { Hello } from "../Hello/Hello";
 
-import { default as ContentStyles } from './Content.module.scss';
+import { default as ContentStyles } from "./Content.module.scss";
 
 const style = bemCssModules(ContentStyles);
 
-export const Content: FC = () => (
-  <section className={style()}>
-    <Switch>
-      <Route component={About} path="/about" />
-      <Route component={Hello} path="/" />
-    </Switch>
-  </section>
-);
+export function Content() {
+  return (
+    <section className={style()}>
+      <Routes>
+        <Route element={<About />} path="/about" />
+        <Route element={<Hello />} path="/" />
+      </Routes>
+    </section>
+  );
+}
