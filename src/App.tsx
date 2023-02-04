@@ -14,13 +14,15 @@ bemCssModules.setSettings({
   throwOnError: true,
 });
 
-export const App = () => (
-  <Provider store={store}>
-    <div className="app">
-      <BrowserRouter>
-        <Header />
-        <Content />
-      </BrowserRouter>
-    </div>
-  </Provider>
-);
+export function App() {
+  return (
+    <Provider store={store}>
+      <div className="app">
+        <BrowserRouter>
+          <Header />
+          <Content />
+        </BrowserRouter>
+      </div>
+    </Provider>
+  );
+}
